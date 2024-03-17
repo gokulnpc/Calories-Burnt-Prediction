@@ -1,6 +1,11 @@
-# Medical Insurance Cost Prediction
+# Calories Burnt Prediction
 
-This web app is created to predict the medical insurance cost based on the user inputs such as age, sex, BMI, children, smoker and region. The model used in this web app is a Random Forest Regressor model. The model is trained on the Medical Insurance dataset from Kaggle. The dataset contains 1338 rows and 7 columns. The model is trained to predict the medical insurance cost based on the user inputs. The model is deployed using Streamlit web app.
+This web app is created to predict the calories burnt based on the user inputs such as gender, age, height, weight, duration, heart rate, and body temperature.
+
+The model used in this web app is a Random Forest Regressor model trained on the dataset with 15000 samples.
+
+The dataset used in this web app is collected from the Kaggle dataset: [Dataset](https://www.kaggle.com/datasets/fmendes/fmendesdat263xdemos).
+    
     
 <img width="960" alt="image" src="https://github.com/gokulnpc/Medical-Insurance-Cost-Prediction/assets/105941681/fc211be4-687c-4063-b794-eecf7c9ac861">
 
