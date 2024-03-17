@@ -43,7 +43,7 @@ if options == 'Prediction': # Prediction page
     if st.button('Predict'):
         st.write(pd.DataFrame(user_inputs, index=[0]))
         # prediction = loaded_model.predict(pd.DataFrame(user_inputs, index=[0]))
-        st.markdown(f'**The predicted Calories Burnt is: {prediction[0]:,.2f}**')  # Display prediction with bold
+        # st.markdown(f'**The predicted Calories Burnt is: {prediction[0]:,.2f}**')  # Display prediction with bold
         
         with st.expander("Show more details"):
             st.write("Details of the prediction:")
