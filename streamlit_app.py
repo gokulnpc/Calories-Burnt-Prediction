@@ -41,15 +41,12 @@ if options == 'Prediction': # Prediction page
     }
     
     if st.button('Predict'):
-        st.write(pd.DataFrame(user_inputs, index=[0]))
-        # prediction = loaded_model.predict(pd.DataFrame(user_inputs, index=[0]))
-        # st.markdown(f'**The predicted Calories Burnt is: {prediction[0]:,.2f}**')  # Display prediction with bold
+        prediction = loaded_model.predict(pd.DataFrame(user_inputs, index=[0]))
+        st.markdown(f'**The predicted Calories Burnt is: {prediction[0]:,.2f}**')  # Display prediction with bold
         
         with st.expander("Show more details"):
             st.write("Details of the prediction:")
-            # You can include more details about the prediction
-            # For example, display the parameters of the loaded model
-            st.json(loaded_model.get_params())
+            
             st.write('Model used: Random Forest Regressor')
             
 elif options == 'Code':
